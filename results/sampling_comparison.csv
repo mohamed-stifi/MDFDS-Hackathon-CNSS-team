@@ -1,0 +1,25 @@
+Model,Accuracy,Precision,Recall,F1 Score,AUC,Sampling,PCA
+RandomForestClassifier_pca,0.959779,0.950549,0.922052,0.936084,0.988902,Over,With PCA
+AdaBoostClassifier_pca,0.920834,0.857958,0.901399,0.879142,0.976839,Over,With PCA
+GradientBoostingClassifier_pca,0.961694,0.950239,0.928714,0.939353,0.990254,Over,With PCA
+XGBoostClassifier_pca,0.957863,0.942896,0.924051,0.933378,0.98933,Over,With PCA
+Gaussian Naive Bayes Classifier_pca,0.858693,0.734454,0.873418,0.797931,0.892739,Over,With PCA
+DecisionTreeClassifier_pca,0.955948,0.932487,0.92938,0.930931,0.949624,Over,With PCA
+RandomForestClassifier,0.971696,0.981013,0.92938,0.954499,0.994254,Over,Without PCA
+AdaBoostClassifier,0.955735,0.933602,0.927382,0.930481,0.991296,Over,Without PCA
+GradientBoostingClassifier,0.96893,0.964997,0.936709,0.950642,0.993191,Over,Without PCA
+XGBoostClassifier,0.970206,0.976875,0.928714,0.952186,0.99412,Over,Without PCA
+Gaussian Naive Bayes Classifier,0.828687,0.800518,0.617588,0.697255,0.91083,Over,Without PCA
+DecisionTreeClassifier,0.96063,0.93984,0.936709,0.938272,0.956425,Over,Without PCA
+RandomForestClassifier_pca,0.990468,0.999885,0.988049,0.993932,0.999053,Under,With PCA
+AdaBoostClassifier_pca,0.988355,0.999654,0.985602,0.992578,0.999135,Under,With PCA
+GradientBoostingClassifier_pca,0.990558,0.99954,0.988504,0.993991,0.999252,Under,With PCA
+XGBoostClassifier_pca,0.990873,0.99977,0.988675,0.994192,0.999228,Under,With PCA
+Gaussian Naive Bayes Classifier_pca,0.924872,0.987551,0.916458,0.950677,0.978121,Under,With PCA
+DecisionTreeClassifier_pca,0.990558,0.998164,0.98987,0.994,0.991507,Under,With PCA
+RandomForestClassifier,0.993346,1.0,0.991578,0.995771,0.999655,Under,Without PCA
+AdaBoostClassifier,0.991278,0.999942,0.989017,0.99445,0.999423,Under,Without PCA
+GradientBoostingClassifier,0.99465,0.999885,0.993342,0.996603,0.999744,Under,Without PCA
+XGBoostClassifier,0.993391,0.999943,0.991691,0.9958,0.999663,Under,Without PCA
+Gaussian Naive Bayes Classifier,0.97806,0.98912,0.983041,0.986071,0.990337,Under,Without PCA
+DecisionTreeClassifier,0.994785,0.999428,0.993968,0.99669,0.995942,Under,Without PCA

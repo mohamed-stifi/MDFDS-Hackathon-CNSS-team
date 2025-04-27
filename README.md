@@ -12,6 +12,8 @@ Our approach combines intelligent feature extraction from raw network data with 
 - **Recall**: 99.33%
 - **F1 Score**: 99.66%
 - **AUC**: 99.97%
+- **Sampling**:	Under
+- **PCA**: Without PCA
 
 This solution empowers Moroccan healthcare institutions to proactively secure their IoMT ecosystems, protect patient confidentiality, comply with national cybersecurity regulations, and ensure safer, smarter healthcare services for the future.
 
@@ -33,12 +35,13 @@ This solution empowers Moroccan healthcare institutions to proactively secure th
 3. **Run the Notebooks**:
    - Start exploring the data: `data_discover.ipynb`
    - Analyze log patterns: `Log_information_analysis.ipynb`
+   - Analyze the results: `results_analysis.ipynb`
    - Apply preprocessing and model training:
      - `oversampling_data_preprocessing.ipynb` (using oversampling)
      - `undersampling_data_preprocessing.ipynb` (using undersampling)
 
 4. **Model Usage**:
-   - Use the best pre-trained model `best_classifier_for_tcp_protocol.pkl` for real-time predictions.
+   - Use the best pre-trained model `best_classifier.pkl` for real-time predictions.
 
 ---
 
@@ -47,21 +50,24 @@ This solution empowers Moroccan healthcare institutions to proactively secure th
 - **Understand Dataset** ➔ Start with `data_discover.ipynb`
 - **Log Analysis & Feature Building** ➔ See `Log_information_analysis.ipynb` + `featuer_extraction.py`
 - **Model Training & Results** ➔ Check `oversampling_data_preprocessing.ipynb` and `undersampling_data_preprocessing.ipynb`
-- **Use Final Model** ➔ Load `best_classifier_for_tcp_protocol.pkl` directly for predictions
+- **Use Final Model** ➔ Load `best_classifier.pkl` directly for predictions
+- **Discover The Metrics Results** ➔ Check  `results_analysis.ipynb` + `oversampling_data_preprocessing.ipynb` and `undersampling_data_preprocessing.ipynb`
 
 ---
 
 ## 🧩 Project Structure
 
 ```plaintext
-├── best_classifier_for_tcp_protocol.pkl 
-│     Pre-trained best model (GradientBoostingClassifier) for TCP protocol subset.
+├── best_classifier.pkl 
+│     Pre-trained best model (GradientBoostingClassifier) for undersampling preprocessing.
 │     Achieved on unseen data:
 │     - Accuracy: 99.46%
 │     - Precision: 99.99%
 │     - Recall: 99.33%
 │     - F1 Score: 99.66%
 │     - AUC: 99.97%
+│     - Sampling:	Under
+│     - PCA: Without PCA
 │
 ├── data/
 │   ├── ECU_IoHT.xlsx
@@ -138,7 +144,7 @@ This solution empowers Moroccan healthcare institutions to proactively secure th
   - Special attention to imbalance issues common in network security datasets.
 
 - **Deployment Ready**:
-  - Best model (`best_classifier_for_tcp_protocol.pkl`) is ready for integration into hospital infrastructure for real-time log security monitoring.
+  - Best model (`best_classifier.pkl`) is ready for integration into hospital infrastructure for real-time log security monitoring.
 
 ---
 
